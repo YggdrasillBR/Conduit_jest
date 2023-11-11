@@ -1,8 +1,4 @@
-import { Profile } from './profile'
-
-
-
-
+import { Profile } from '/core/types/profile.ts'
 
 export type article = {
     slug: string
