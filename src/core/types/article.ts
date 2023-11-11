@@ -1,7 +1,7 @@
-import { Tag } from './tag'
-import { Profile } from './profile'
+import { type Tag } from './tag'
+import { type Profile } from './profile'
 
-export interface Article {
+export type Article {
   slug: string
   title: string
   description: string

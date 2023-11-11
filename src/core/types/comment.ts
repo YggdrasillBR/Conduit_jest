@@ -1,6 +1,6 @@
 import { type Profile } from './profile'
 
-export type comment = {
+export interface comment {
   id: number
   createdAt: string
   updatedAt: string
