@@ -1,15 +1,19 @@
-import { Profile } from './profile';
+import { Tag } from './tag'
+import { Profile } from './profile'
 
-export type article = {
-    slug: string
-    title: string
-    description: string
-    body: string
-    tags: string
-    createdat: string
-    updatedat: string
-    favorited: boolean
-    favoritedNumber: number
-    author: Profile
+export interface Article {
+  slug: string
+  title: string
+  description: string
+  body: string
+  taglist: Tag[]
+  createdAt: string
+  updatedAt: string
+  favorited: boolean
+  favoritedNumber: number
+  author: Profile
 }
-
+export type Articles = {
+  article: Article[]
+  articlesCount: number
+}

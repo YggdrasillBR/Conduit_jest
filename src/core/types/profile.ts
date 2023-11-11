@@ -1,6 +1,6 @@
 export type Profile = {
-    username: string
-    bio: string
-    image: string
-    follow: boolean
+  username: string
+  bio: string
+  image: string
+  follow: boolean
 }
