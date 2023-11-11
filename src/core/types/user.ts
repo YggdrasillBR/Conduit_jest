@@ -4,4 +4,4 @@ export type user = {
     username: string
     bio: string
     image : string
-}
+}eslint 
