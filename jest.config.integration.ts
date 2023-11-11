@@ -1,8 +1,8 @@
 'use strict'
 
-const jestConfig = require('./jest.config')
+import jestConfig from './jest.config'
 
-module.exports = {
+export default {
   ...jestConfig,
   testMatch: ['**/?(*.)+(spec|test).integration.[tj]s?(x)'],
 }
