@@ -1,6 +1,6 @@
 import { type outsideRegister } from './register';
-import { CreateUser } from "../types/CreateUser";
-import * as TE from "fp-ts/TaskEither";
+import { CreateUser } from '../types/CreateUser';
+import * as TE from 'fp-ts/TaskEither';
 import { pipe } from 'fp-ts/lib/function';
 import * as E from 'fp-ts/Either'
 
