@@ -1,5 +1,5 @@
 import { pipe } from 'fp-ts/function';
-import { CreateUser } from "../types/CreateUser";
+import { CreateUser } from "../../types/CreateUser";
 import { outsideRegister, register } from './register';
 import * as TE from "fp-ts/TaskEither";
 

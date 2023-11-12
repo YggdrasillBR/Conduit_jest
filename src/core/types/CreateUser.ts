@@ -1,6 +1,11 @@
+import { createUserCodec } from './CreateUser';
+import * as t from 'io-ts'
+import { emailCodec } from './scalar/email';
 
-export type CreateUser = {
-  username: string;
-  email = string;
-  password: string;
-};
+export const createUserCodec = t.type({
+  username: t.string;
+  email = emailCodec;
+  password: t.string;
+}) 
+
+export type CreateUser = t.TypeOf <typeof createUserCodec>

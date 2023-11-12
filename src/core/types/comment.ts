@@ -1,9 +1,14 @@
-import { type Profile } from './profile'
+import { profileCodec } from './profile'
+import * as t from 'io-ts'
 
-export interface comment {
+
+export const commentCodec = t.type({
   id: number
   createdAt: string
   updatedAt: string
   body: string
-  author: Profile
+  author: profileCodec
+})
+export type Comment = t.TypeOf<typeof commentCodec>
+  
 }

@@ -6,7 +6,7 @@ type EmailBrand = {
     readonly Email: unique symbol
 }
 
-export const Email = withMessage(
+export const emailCodec = withMessage(
     t.brand(
         t.string;
         (value): value is t.Branded<string, EmailBrand> => itsEmail(value);
@@ -14,6 +14,8 @@ export const Email = withMessage(
     )
     () => 'Invalid email'
 )
+
+export type Email = t.Type< typeof emailCodec >
 
 function itsEmail(value: value){
     return /^\a+.+?@\a+.?$/.test(value);
