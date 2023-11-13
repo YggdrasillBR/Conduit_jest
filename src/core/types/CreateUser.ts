@@ -1,6 +1,6 @@
 import { createUserCodec } from './CreateUser';
 import * as t from 'io-ts'
-import { emailCodec } from './scalar/email';
+import { emailCodec } from './scalar/email/email';
 
 export const createUserCodec = t.type({
   username: t.string;

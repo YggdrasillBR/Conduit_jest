@@ -10,7 +10,7 @@ export const emailCodec = withMessage(
     t.brand(
         t.string;
         (value): value is t.Branded<string, EmailBrand> => itsEmail(value);
-        Email  
+        Email; 
     )
     () => 'Invalid email'
 )

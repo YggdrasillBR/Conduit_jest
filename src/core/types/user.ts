@@ -1,4 +1,4 @@
-import { emailCodec } from './scalar/email';
+import { emailCodec } from './scalar/email/email';
 import * as t from 'io-ts'
 
 export const userCodec = {

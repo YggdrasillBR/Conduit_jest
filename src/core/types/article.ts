@@ -1,3 +1,4 @@
+import { Article } from './article';
 import { tagCodec} from './tag'
 import { profileCodec } from './profile'
 import * as t from "io-ts"
@@ -18,7 +19,7 @@ export const articuleCodec = t.type({
 export type Article = t.TypeOf<typeof articuleCodec>
 
 export const articlesCodec = t.type({
-  article: t.array(articlesCodec)
+  articles: t.array(Article)
   articlesCount: t.number
 })
 
